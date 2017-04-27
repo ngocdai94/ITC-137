@@ -11,3 +11,4 @@ date             # What time is it on the machine (WHEN)
 
 #!/bin/sh                                                                                
 echo "this is text... from a command.  yay." 
+testing...

@@ -1,0 +1,48 @@
+    1  sudo su
+    2  git
+    3  git | less
+    4  git config user.name "nic-instruction"
+    5  pwd
+    6  git clone https://github.com/nic-instruction/ITC-136.git
+    7  ls -l
+    8  cd ITC-136/
+    9  git config user.name "nic-instruction"
+   10  history
+   11  history >> ../Desktop/history.out
+   12  pwd
+   13  ls -l
+   14  ls
+   15  echo "test" >> lab1.sh
+   16  cat lab1.sh 
+   17  git commit
+   18  git config user.name nicole.bade@seattlecolleges.edu
+   19  git commit
+   20  git config --global nicole.bade@seattlecolleges.edu
+   21  git config --global user.name nic-instruction
+   22  git commit -m "test"
+   23  git config --global "nicole.bade@seattlecolleges.edu"
+   24  git commit -m "test"
+   25  git config --global "user.name nic-instruction"
+   26  git config --global user.name "nic-instruction"
+   27  git commit -m "test"
+   28  git config --global user.email "you@example.com"
+   29  git config --global user.email "nicolebade@gmail.com"
+   30  git commit -m "test"
+   31  git push
+   32  git
+   33  cd ..
+   34  git clone https://github.com/nic-instruction/ITC-136.git
+   35  rm -r ITC-136/
+   36  rm -rf ITC-136/
+   37  git clone https://github.com/nic-instruction/ITC-136.git
+   38  ls -l
+   39  cd ITC-136/
+   40  ls -l
+   41  ls -ltra
+   42  cd .git
+   43  ls -la
+   44  cd ..
+   45  git config --global user.email "nicolebade@gmail.com"
+   46  git config --global user.name "nic-instruction"
+   47  ls -l
+   48  history >> firstconfig.history
