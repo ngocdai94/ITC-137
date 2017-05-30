@@ -1,0 +1,24 @@
+#!/bin/bash
+
+diskused=$( df -h | grep "/dev/sda1" | awk '{print $5}' ) # Uses the df command to look at space used in /dev/sda1
+memfree=$( free -mh | grep Mem: | awk '{print $7}' )      # Uses the free command to tell us how much RAM we have unused on the sytem
+connections=$( netstat | grep tcp )                       # Lists all active tcp connections from and to our machine
+users=$( who | awk '{print $1}' )                         # Lists all users currently logged in
+
+
+
+
+echo -en "This is a snapshot of your current system:
+
+         			\e[36m		Disk Used: $diskused
+                     		\e[95m		Free Memory: $memfree
+                     		\e[31m		Logged in Users: $users
+
+\e[46m
+Open Internet Connections: 
+$connections
+
+\e[49m
+"
+
+#sleep 25
